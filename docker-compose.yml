@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db-product:
+    container_name: db-product
+    image: postgres:15.2
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: product
+      POSTGRES_USER: jime
+      POSTGRES_PASSWORD: jime
+    ports:
+      - 5431:5432
+
+
+
+
